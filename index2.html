@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hedwen Coin</title>
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #000;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    h1, h2, h3 {
+      color: #fff;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Hero Section */
+    .hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('rocket-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin: 20px 0;
+  color: #fff;
+}
+
+.cta-button {
+  background-color: #fff;
+  color: #000;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #ddd;
+}
+
+    /* Features Section */
+    .features {
+      padding: 50px 0;
+      background-color: #111;
+      text-align: center;
+    }
+
+    .features h2 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
+
+    .feature-cards {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 10px;
+      width: 30%;
+      margin: 10px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    /* Roadmap Section */
+    .roadmap {
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .roadmap h2 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      background-color: #fff;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -3px;
+    }
+
+    .timeline-item {
+      padding: 10px 40px;
+      position: relative;
+      width: 50%;
+    }
+
+    .timeline-item::after {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      background-color: #fff;
+      border: 4px solid #000;
+      top: 15px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .left {
+      left: 0;
+    }
+
+    .right {
+      left: 50%;
+    }
+
+    .right::after {
+      left: -12px;
+    }
+
+    .left::after {
+      right: -12px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #111;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Hedwen Coin</h1>
+      <p>Your Gateway to the Future of Wealth</p>
+      <button class="cta-button">BUY NOW BEFORE IT'S TOO LATE 🚀</button>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <h2>WHY HEDWEN COIN IS THE FUTURE</h2>
+      <div class="feature-cards">
+        <div class="card">
+          <h3>Limitless Growth</h3>
+          <p>Designed to skyrocket. Early investors will dominate the market.</p>
+        </div>
+        <div class="card">
+          <h3>Community-Driven</h3>
+          <p>A global movement of believers pushing Hedwen Coin to new heights.</p>
+        </div>
+        <div class="card">
+          <h3>Secure & Transparent</h3>
+          <p>Built on blockchain technology. Safe, fast, and reliable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Roadmap Section -->
+  <section class="roadmap">
+    <div class="container">
+      <h2>OUR JOURNEY TO SUCCESS</h2>
+      <div class="timeline">
+        <div class="timeline-item left">
+          <h3>Phase 1: Launch & Initial Surge</h3>
+          <p>We launch Hedwen Coin and watch it soar.</p>
+        </div>
+        <div class="timeline-item right">
+          <h3>Phase 2: Community Growth & Partnerships</h3>
+          <p>Expand our reach and build strong alliances.</p>
+        </div>
+        <div class="timeline-item left">
+          <h3>Phase 3: Global Dominance</h3>
+          <p>Take over the world and redefine wealth.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Hedwen Coin. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
